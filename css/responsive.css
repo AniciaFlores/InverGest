@@ -1,0 +1,203 @@
+/* Estilos móviles */
+@media screen and (max-width: 766px) {
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    nav {
+      font-size: 1em;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .bi-list {
+      color: white;
+      display: block;
+    }
+  
+    /* Oculta los elementos que no quieres mostrar */
+    nav ul li:not(.logo):not(.ingresar) {
+      display: none;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .menu-toggle, .logo, .ingresar {
+      flex-basis: 33.33%;
+    }
+  
+    .menu-toggle {
+      text-align: left;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    .ingresar {
+      text-align: right;
+    }
+  }
+  
+  /* Estilos para el footer en móviles */
+  @media screen and (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .footer-column {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .formulario {
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .move-left {
+      margin-left: 0;
+    }
+  
+    .email-input {
+      margin-left: 0;
+      width: 80%;/* Reduce el ancho del input para evitar el desbordamiento */
+    }
+  }
+  
+  
+  /* Estilos para Tablet */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    nav {
+      font-size: 1.2em; /*Tamaño de fuente Tablet */
+    }
+  
+    .test-desktop,
+    .acerca-de-tablet {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: space-between; 
+      padding: 0; 
+    }
+  
+    /* Logo para Tablet */
+    nav ul li.logo {
+      flex-direction: row;
+      margin: 0 20px; /*Ajusta el margen del logo*/
+    }
+  
+    nav ul li {
+      flex: 1; /* Hace que los elementos ocupen un espacio igual */
+    }
+  
+    nav ul li:nth-child(5) {
+      display: none; /* Oculta el quinto elemento (Acerca de) */
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px; /* Tamaño de fuente */
+    }
+  }
+  
+  /* Estilos para Tablet y Desktop */
+  @media screen and (min-width: 767px) {
+    .menu-toggle {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .logo {
+      order: 3; /* El logo será el tercer elemento, por ejemplo */
+    }
+  
+    .ingresar {
+      order: 4; /* 'Ingresar' será el cuarto elemento, por ejemplo */
+    }
+  }
+  
+  /* Estilos para Desktop */
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    footer {
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .footer-content {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex-basis: calc(25% - 15px);
+      margin-bottom: 20px;
+    }
+  
+    .redes {
+      margin-left: 2em; /* Ajusta este valor a lo que necesites */
+    }
+  
+    /* Estilos para el formulario */
+    .move-left {
+      margin-left: 8px;
+    }
+  
+    /* Estilos input de email */
+    .email-input {
+      max-width: 170px;
+      height: 61px;
+      padding: 10px;
+      margin-left: -0px;
+      font-size: 16px;
+      background-color: transparent;
+      border: 1px solid #7c7c88;
+      box-sizing: border-box;
+    }
+  
+    .submit-button {
+      max-width: 100px;
+      height: 60px;
+      background-color: #ffd015;
+      border: none;
+      border-radius: 3%;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Estilos para Tablet y Desktop */
+  @media screen and (min-width: 767px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .logo {
+      order: 0; /* El logo será el primer elemento */
+    }
+  
+    .ingresar {
+      order: 1; /* 'Ingresar' será el segundo elemento */
+    }
+  }
+  
