@@ -1,11 +1,14 @@
 .container {
     display: flex;
   }
-  
-  .left-half {
-    flex: 50%;
+
+  .left-content, .right-content {
+    flex: 1 1 25%; /* Ocupa el 25% del ancho en pantallas grandes */
   }
   
-  .right-half {
-    flex: 50%;
+  .right-content {
+    background-color: #6366F1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
