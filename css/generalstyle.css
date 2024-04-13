@@ -14,15 +14,30 @@ html {
     position: relative;
     min-height: 100%;
 }
-.container{
-    max-width:1200px ;
-    margin: 0 auto;
-}
 
 body{
     background-color: #18181B;
     overflow-x: hidden;
   }
+
+  .container {
+    position: relative; /* Crea un nuevo contexto de apilamiento */
+  }
+  
+  nav {
+    position: relative;
+    z-index: 2; /* Un número más alto que el z-index del main */
+  }
+  
+  main {
+    position: relative;
+    z-index: 1; /* Un número más bajo que el z-index del nav */
+  }
+  
+  .right-content {
+    position: relative; /* O cualquier otra posición que no sea 'static' */
+    z-index: 1; /* Un número más bajo que el z-index del nav */
+}
 
 a{
     text-decoration: none;
@@ -53,6 +68,7 @@ h3{
 
 h4{
     font-size: 3.8em;
+    color: #EAEAFD;
 }
 
 h5{
@@ -71,6 +87,7 @@ p {
 }
 
 /* Estilos para el nav-bar */
+
 nav {
   background-color: #18181B; /* Color de fondo, barra de navegación */
   font-size: 1.4em; /* Tamaño-fuente predeterminado para Desktop */

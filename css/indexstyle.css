@@ -20,6 +20,7 @@
     font-weight: 300;
   }
   
+  /* Estilo de los botones */
   .buttonyellow1, .buttongrey{
     width: 100%; 
     max-width: 360px; 
@@ -62,7 +63,7 @@
   .buttongrey:hover {
   background-color: #3e3e3f;
   }
-  
+/* Estilos de la imagen principal */
   .right-content {
     background-color: #6366F1; 
     display: flex;

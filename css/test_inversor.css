@@ -1,14 +1,107 @@
-.container {
-    display: flex;
-  }
+/* Estilos para el main */
+.first-view {
+  display: flex;
+  align-items: center; 
+  flex-wrap: wrap;
+}
 
-  .left-content, .right-content {
+/* Estilos para el formulario */
+#investorTestSection {
+  width: 90%; /* Ajusta el ancho del formulario */
+  margin: 0 auto; /* Establece márgenes automáticos para centrarlo horizontalmente */
+  counter-reset: question-counter; /* Reinicia el contador */
+}
+
+.question {
+  display: flex; /* Utiliza Flexbox para alinear elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  counter-increment: question-counter; /* Incrementa el contador para cada pregunta */
+  margin-bottom: 20px; /* Ajusta el espacio entre las preguntas */
+}
+
+.white-text {
+  color: white;
+}
+
+.question label p {
+  margin-bottom: 5px;
+}
+
+.question::before {
+  content: counter(question-counter) ". "; /* Agrega el número de la pregunta */
+  color:#EAEAFD;
+  font-size: 2.4em; /* Ajusta el tamaño de fuente de los números */
+  margin-right: 10px; /* Ajusta el espacio entre el número y el texto de la pregunta */
+}
+
+.form-question{
+  font-size: 2.4em;
+  color: #EAEAFD;
+  font-weight: 400;
+}
+
+
+.left-content, .right-content {
     flex: 1 1 25%; /* Ocupa el 25% del ancho en pantallas grandes */
-  }
+}
+
+  /* Estilos para el texto */
+.left-content{
+    text-align: center;
+    padding: 20px;
+}
+
+.left-content h5{
+    margin: 20px auto 20px ;
+    font-weight: 300;
+}
   
-  .right-content {
+  /* Estilo para la caja de la imagen */
+.right-content {
     background-color: #6366F1; 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.circle-image {
+    width: 75%;
+    border-radius: 50%;
+    margin: 100px auto 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+/* Estilo del botón finalizar */
+.submit-button{
+  width: 100%; 
+  max-width: 325px; 
+  height: 57px;
+  margin: 50px auto 10px; 
+}
+
+.submit-button {
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center; 
+  border: none;
+  border-radius: 10px;
+  background-color: #FFD015; 
+  color: #18181B;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
   }
+  
+.submit-button:hover {
+background-color: #fadb5d;
+}
+

@@ -6,42 +6,174 @@
     <title>InverGest - Simplifying Your Investment Decisions</title>
     <link rel="icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="css/generalstyle.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/test_inversor.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
 <body>
-
-<header>
-    <nav>
-        <div class="menu-toggle">
-          <i class="bi bi-list"></i> <!-- Icono de hamburguesa -->
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="test-desktop"><a href="test_inversor.html">Test del Inversor</a></li>
-          <li><a href="#">Inversiones</a></li>
-          <li class="logo"><a href="#"><span><i class="bi bi-brightness-high"></i> InverGest</span></a></li>
-          <li class="ingresar"><a href="#">Ingresar</a></li>
-          <li><a href="#">@InverGestApp</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li class="acerca-de-tablet"><a href="#">Acerca de</a></li>
-        </ul>
-      </nav>
-</header>
-<main>
-    <div class="first-view">
-        <div class="left-content">
-            <h1>Conócete <br>
-                como inversor</h1>
-            <p>Respondé  6 simples preguntas y conocé qué tipo de inversor sos: Conservador, Moderado o Agresivo. <br>
-                 Además al finalizar te mostraremos un portafolio para tu perfil.</p>
-        </div>
-        <div class="right-content">
-            <div class="circle-image">
-                <img src="imgs/inversor.png" alt="Imagen de perfil">
+    <div class="container">
+        <header>
+            <nav>
+                <div class="menu-toggle">
+                <i class="bi bi-list"></i> <!-- Icono de hamburguesa -->
+                </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="test-desktop"><a href="test_inversor.html">Test del Inversor</a></li>
+                <li><a href="#">Inversiones</a></li>
+                <li class="logo"><a href="#"><span><i class="bi bi-brightness-high"></i> InverGest</span></a></li>
+                <li class="ingresar"><a href="#">Ingresar</a></li>
+                <li><a href="#">@InverGestApp</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="acerca-de-tablet"><a href="#">Acerca de</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="first-view">
+                <div class="left-content">
+                    <h1>Conócete <br>
+                        como inversor</h1>
+                    <h5>Respondé  6 simples preguntas y conocé qué tipo de inversor sos: Conservador, Moderado o Agresivo. 
+                        Al finalizar, te mostraremos un portafolio para tu perfil.</h5>
+                </div>
+                <div class="right-content">
+                    <div class="circle-image">
+                        <img src="imgs/chica con duda.jpg" alt="Imagen de perfil">
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <div id="investorTestSection">
+                <form>
+                    <!-- Pregunta 1-->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Cuál sería el objetivo de la inversión?</p></label><br>
+                        <div>
+                            <input type="radio" id="question1_option1" name="question1" value="option1">
+                            <label for="question1_option1"> No tengo ningún propósito en especial.</label><br>
+                            <input type="radio" id="question1_option2" name="question1" value="option2">
+                            <label for="question1_option2">Tengo un propósito en especial (Ej. compra de un bien, emprndimiento, ahorro...). </label><br>
+                        </div>
+                    </div>
+                    <!-- Pregunta 2-->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Con cuál de las siguientes frases te identificas?</p></label><br>
+                        <div>
+                            <input type="radio" id="question2_option1" name="question2" value="option1">
+                            <label for="question2_option1">No conozco ni realicé nunca inversiones</label><br>
+                            <input type="radio" id="question2_option2" name="question2" value="option2">
+                            <label for="question2_option2">Realicé algunas inversiones, conozco algunas inversiones.</label><br>
+                            <input type="radio" id="question2_option3" name="question2" value="option3">
+                            <label for="question2_option3">Todavía no inverti, pero conozco un poco el tema.</label><br>
+                            <input type="radio" id="question2_option4" name="question2" value="option4">
+                            <label for="question2_option4">Tengo mucho conocimiento sobre inversiones</label><br>
+                        </div>
+                    </div>
+                    <!-- Pregunta 3 -->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Con relación al total de tus ahorros, esta inversión representa?</p></label><br>
+                        <div>
+                            <input type="radio" id="question3_option1" name="question3" value="option1">
+                            <label for="question3_option1" class="white-text">Menos de la cuarta parte</label><br>
+                            <input type="radio" id="question3_option2" name="question3" value="option2">
+                            <label for="question3_option2" class="white-text">Entre el 50% y el 75%</label><br>
+                            <input type="radio" id="question3_option3" name="question3" value="option3">
+                            <label for="question3_option3" class="white-text">Casi la mitad de mis ahorros</label><br>
+                            <input type="radio" id="question3_option4" name="question3" value="option4">
+                            <label for="question3_option4" class="white-text">Casi el total de mis ahorros</label><br>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 4 -->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Cuánto tiempo conservarías esta inversión?</p></label><br>
+                        <div>
+                            <input type="radio" id="question4_option1" name="question4" value="option1">
+                            <label for="question4_option1">Menos de 180 días</label><br>
+                            <input type="radio" id="question4_option2" name="question4" value="option2">
+                            <label for="question4_option2">De 1 a 2 años</label><br>
+                            <input type="radio" id="question4_option3" name="question4" value="option3">
+                            <label for="question4_option3">Más de 180 días</label><br>
+                            <input type="radio" id="question4_option4" name="question4" value="option4">
+                            <label for="question4_option4">Más de 2 años</label><br>
+                        </div>
+                    </div>
+                    <!-- Pregunta 5 -->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Qué tipo de inversión desearías?</p></label><br>
+                        <div>
+                            <input type="radio" id="question5_option1" name="question5" value="option1">
+                            <label for="question5_option1">Deseo una inversión sin riesgo de capital, ni rendimiento negativo. Preservando el capital, obteniendo mayor renta y liquidez que una caja de ahorro.</label><br>
+                            <input type="radio" id="question5_option2" name="question5" value="option2">
+                            <label for="question5_option2">Deseo incrementar mi capital entre 1 y 2 años, obteniendo una renta más importante con ciertos riesgos y alguna pérdida ocasional.</label><br>
+                            <input type="radio" id="question5_option3" name="question5" value="option3">
+                            <label for="question5_option3">Deseo rentas estables en menos de 1 año, mayores a las de los plazos fijos, entendiendo que pueden que pueden existir fluctuaciones a corto plazo.</label><br>
+                            <input type="radio" id="question5_option4" name="question5" value="option4">
+                            <label for="question5_option4">Deseo obtener la mayor renta en un período mayor a 2 años aceptando los riesgos y pérdidas posibles en mi capital.</label><br>
+                        </div>
+                    </div>
+                    <!-- Pregunta 6 -->
+                    <div class="question">
+                        <label><p class="form-question white-text">¿Conservarías una inversión que está dando pérdidas?</p></label><br>
+                        <div>
+                            <input type="radio" id="question6_option1" name="question6" value="option1">
+                            <label for="question6_option1">No, cambiaría de inmediato a otras inversiones.</label><br>
+                            <input type="radio" id="question6_option2" name="question6" value="option2">
+                            <label for="question6_option2">Sí, condicionando un análisis de la situación.</label><br>
+                            <input type="radio" id="question6_option3" name="question6" value="option3">
+                            <label for="question6_option3">No, cambiaría parcialmente a otras inversiones.</label><br>
+                            <input type="radio" id="question6_option4" name="question6" value="option4">
+                            <label for="question6_option4">Sí, tolero una pérdida a corto plazo esperando una ganancia a largo plazo.</label><br>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Finalizar</button>
+                </form>
+            </div>    
+        </main>
+        <footer>
+            <div class="footer-content">
+              <div class="footer-column">
+                <h6>Empresa</h6>
+                <ul>
+                  <li><a href="#">Acerca de</a></li>
+                  <li><a href="#">Empleo</a></li>
+                  <li><a href="#">Prensa</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h6>Características</h6>
+                <ul>
+                  <li><a href="#">Rendimiento</a></li>
+                  <li><a href="#">Opciones</a></li>
+                  <li><a href="#">Actualizaciones</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h6>Redes</h6>
+                <ul>
+                  <li><a href="#">@InverGestx</a></li>
+                  <li><a href="#">@InverGestIG</a></li>
+                  <li><a href="#">Foros</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h6 class="h6-special move-left">Boletín Mensual</h6>
+                <p class="move-left">Recibe consejo para <br> optimizar tus inversiones.</p>
+              
+                <div class="formulario move-left">
+                  <input type="email" placeholder="ejemplo@mail.com" class="email-input moveCuadro-left">
+                  <button type="submit" class="submit-button">
+                    <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; 2024 InverGestApp - Todos los derechos reservados
+            </div>
+          </footer> 
     </div>
