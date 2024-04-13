@@ -1,0 +1,232 @@
+@media screen and (max-width: 768px) {
+    .left-content{
+        flex: 2 60%;
+    }
+    
+    .left-content h1{
+        font-size: 5em;
+    }
+
+    .left-content h5{
+        font-size: 2.3em ;
+    }
+
+    .right-content{
+        flex: 1 40%;  
+    }
+
+    .circle-image{
+        margin: 30% 0;
+    }   
+
+    .mission-container {
+        margin: 15vw 5vw;
+        
+    }
+
+    .mission-container h5 {
+        font-size: 2.5em ;
+    }
+
+    .image-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image-cards h4{
+        font-size: 3em;
+    }
+        
+    .image-card p{
+    font-size: 1.5em;
+    }
+
+    .steps-container {
+        max-width: 100%; 
+        margin: 0em 4em 5em 4em;
+    }
+      
+    .step-number {
+    font-size: 4em;
+    margin-right: 2em;
+    }
+
+    #number1{
+    font-size: 4em;
+    margin-right: 2.2em;
+    }
+
+    .step {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    .options-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .option{
+        padding: 40px 20px;
+    }
+
+    .option h3 {
+        font-size: 2.5em; 
+    }
+
+    .option p, .option ul li {
+        font-size: 1.1em; 
+    }
+
+    .option a {
+        font-size: 0.9em; 
+    }
+
+    .option img{
+        padding-top: 10%;
+    }
+    
+    .last-view{
+        padding-top: 80px;
+    }
+
+    .last-view img{
+        max-width: 25%;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .circle-image img{
+        width: auto;
+    }
+    
+    .circle-image{
+        margin: 5% auto;   
+    }
+
+    .mission-container{
+        padding: 8vw;
+        margin: 25vw 5vw;
+    }
+
+    .image-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        grid-template-rows: auto auto; /* Dos filas */
+        gap: 20px;
+      }
+    
+    /* El primer elemento ocupará ambas columnas de la primera fila */
+    .image-card-item:nth-child(1) {
+    grid-column: span 2;
+    }
+
+    /* Los otros dos elementos se mostrarán uno al lado del otro en la segunda fila */
+    .image-card-item:nth-child(2),
+    .image-card-item:nth-child(3) {
+    grid-column: span 1;
+    }
+
+    .image-card-item:nth-child(1) img {
+    width: 70%;
+    height: auto; 
+    }
+
+    .image-cards h4{
+        font-size: 2.5em;
+    }
+
+    .steps-container {
+        max-width: 100%; 
+        margin: 0 1em 5em 1em;
+    }
+      
+    .steps-container h2 {
+    font-size: 3em;
+    }
+    
+    .step-number {
+    font-size: 5em;
+    margin-right: 2em;
+    }
+
+    #number1{
+    font-size: 5em;
+    margin-right: 2.1em;
+    }
+    
+    .step h3 {
+    font-size: 1.5em;
+    }
+    
+    .step h5 {
+    font-size: 1.6em;
+    }
+    
+    .step {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+    /* Cambia la disposición de la cuadrícula a dos columnas */
+    .options-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto; /* Dos filas, una para las primeras dos opciones y otra para la última */
+        gap: 10px; 
+        margin-top: 0;
+    }
+
+    /* Aplica un tamaño de columna doble a la última opción */
+    .option:last-child {
+        grid-column: span 2; /* La última opción ocupará ambas columnas */
+    }
+
+    .option {
+        padding: 15px;
+        border-radius: 20px; 
+    }
+    .detail-section h1{
+        font-size: 3.5em;
+    }
+
+    .detail-section h5{
+        font-size: 2.2em;
+    }
+
+    .option h3 {
+        font-size: 2em;
+    }
+
+    .option p, .option ul li {
+        font-size: 1em;
+    }
+
+    .option ul {
+        padding: 5% 0;
+    }
+
+    .option a {
+        font-size: 0.9em;
+    }
+
+    .option img{
+        height: 45%;
+        padding-top: 5%;
+    }
+
+    .last-view{
+        padding-top: 50px;
+    }
+
+    .last-view img{
+        max-width: 40%;
+    }
+      
+    .last-view h1 {
+        font-size: 3.5em;
+    }
+    
+    .last-view h5 {
+        font-size: 1.9em;
+
+    }
+}
+
