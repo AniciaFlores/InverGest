@@ -5,42 +5,6 @@
   flex-wrap: wrap;
 }
 
-/* Estilos para el formulario */
-#investorTestSection {
-  width: 90%; /* Ajusta el ancho del formulario */
-  margin: 0 auto; /* Establece márgenes automáticos para centrarlo horizontalmente */
-  counter-reset: question-counter; /* Reinicia el contador */
-}
-
-.question {
-  display: flex; /* Utiliza Flexbox para alinear elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  counter-increment: question-counter; /* Incrementa el contador para cada pregunta */
-  margin-bottom: 20px; /* Ajusta el espacio entre las preguntas */
-}
-
-.white-text {
-  color: white;
-}
-
-.question label p {
-  margin-bottom: 5px;
-}
-
-.question::before {
-  content: counter(question-counter) ". "; /* Agrega el número de la pregunta */
-  color:#EAEAFD;
-  font-size: 2.4em; /* Ajusta el tamaño de fuente de los números */
-  margin-right: 10px; /* Ajusta el espacio entre el número y el texto de la pregunta */
-}
-
-.form-question{
-  font-size: 2.4em;
-  color: #EAEAFD;
-  font-weight: 400;
-}
-
-
 .left-content, .right-content {
     flex: 1 1 25%; /* Ocupa el 25% del ancho en pantallas grandes */
 }
@@ -79,15 +43,62 @@
     border-radius: 50%;
 }
 
-/* Estilo del botón finalizar */
-.submit-button{
+/* Estilos para el formulario */
+#investorTestSection {
+  width: 90%; /* Ajusta el ancho del formulario */
+  margin: 0 auto; /* Establece márgenes automáticos para centrarlo horizontalmente */
+  counter-reset: question-counter; /* Reinicia el contador */
+}
+
+.question {
+  display: block;
+  align-items: center; /* Centra verticalmente los elementos */
+  counter-increment: question-counter; /* Incrementa el contador para cada pregunta */
+  margin-bottom: 30px; /* Ajusta el espacio entre las preguntas */
+  padding-bottom: 10px; /* Agrega espacio debajo de cada pregunta */
+}
+
+.question::before {
+  content: counter(question-counter) ". "; /* Agrega el número de la pregunta */
+  color:#EAEAFD;
+  font-size: 2.4em; 
+  margin-right: 10px; /* Ajusta el espacio entre el número y el texto de la pregunta */
+  vertical-align: middle; /* Alinea verticalmente el número con el texto de la pregunta */
+}
+
+.form-question{
+  font-size: 2.4em;
+  color: #EAEAFD;
+  font-weight: 400;
+  margin-bottom: 20px; /* Espacio entre las preguntas y las opciones*/
+}
+
+/* Estilos de los inputs */
+.response-inputs input[type="radio"]{
+  display:inline-block; /* Coloca las opciones en línea horizontal */
+  margin-right: 10px; /*Ajusta el espacio entre los botones de la opción*/
+  margin-bottom: 10px;
+  vertical-align: middle; /* Alinea verticalmente los botones con el texto */
+}
+
+.response-inputs label {
+  color: #EAEAFD; 
+  font-size: medium;
+  display: inline-block; /* Alina las etiquetas horizontalmente */
+  vertical-align: middle; /* Alinea verticalmente las etiquetas con los botones */
+  margin-bottom: 10px; /* Espacio entre las etiquetas */
+  margin-left: 10px; /* Ajusta la sangría */
+}
+
+/* Estilo del botón "Finalizar" el test */
+.finish-button{
   width: 100%; 
   max-width: 325px; 
   height: 57px;
   margin: 50px auto 10px; 
 }
 
-.submit-button {
+.finish-button {
   display: inline-flex;
   align-items: center; 
   justify-content: center; 
@@ -101,9 +112,11 @@
   transition: background-color 0.3s;
   }
   
-.submit-button:hover {
-background-color: #fadb5d;
+.finish-button:hover {
+  background-color: #fadb5d;
 }
+
+
 
 
 

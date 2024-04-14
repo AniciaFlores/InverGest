@@ -195,7 +195,6 @@ nav {
 .formulario {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .move-left {
   margin-left: -100px;
@@ -207,10 +206,16 @@ nav {
   margin-top: 8px;
 }
 
+/* Caja de e-mail*/
+.formulario move-left{
+  display: flex;
+  align-items: center;
+}
 .email-input {
-  width: 208px;
+  width: 150px;
   height: 37px;
   padding: 10px;
+  margin-left: 2px;
   font-size: 16px;
   background-color: transparent; 
   border: 1px solid #7C7C88; 
@@ -224,10 +229,10 @@ nav {
   border: none;
   border-radius: 3%;
   margin-top: 8px;
-  margin-left: -2px; /* Ajusta el espacio entre el input y el botón */
+  margin-left: 1px; /* Ajusta el espacio /entre el input y el botón */
   cursor: pointer;
 }
-
+/* Efecto hover en el botón de envío */
 .footer-column button:hover {
   background-color: #6366f1;
 } 
