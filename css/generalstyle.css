@@ -51,6 +51,12 @@ ul, ol{
     list-style-type: none;
 }
 
+/* Estilo para los enlaces de navegación cuando están activos */
+header nav ul li a.active {
+  background-color: rgba(99, 102, 241, 0.4);
+  ; /* Color de fondo de los enlaces activos */
+}
+
 h1{
     font-size: 6.7em;
     color: #EAEAFD;
