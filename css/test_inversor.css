@@ -43,6 +43,17 @@
     border-radius: 50%;
 }
 
+/* Estilos para las instrucciones */
+.instructions {
+  text-align:left; /* Alinea el texto al centro */
+  margin-top: 40px;
+  margin-bottom: 50px; /* Agrega espacio inferior para separar las instrucciones del formulario */
+  margin-left: 31px; /* Márgen izquierdo del texto */
+  margin-right: 60px; /* Márgen derecho del texto */
+  font-size: 1.6em; /* Tamaño del texto */
+  color: #EAEAFD; /* Color del texto */
+}
+
 /* Estilos para el formulario */
 #investorTestSection {
   width: 90%; /* Ajusta el ancho del formulario */
@@ -114,6 +125,29 @@
   
 .finish-button:hover {
   background-color: #fadb5d;
+}
+
+/* Estilos para el título "Respuestas Preliminares del Test" */
+.results-container h2 {
+  font-size: 2.8em; 
+}
+
+/* Estilos para el texto de la respuesta */
+
+.results-container {
+  text-align:left; /* Alinea a la izquierda el contenido dentro del contenedor */
+  margin-top: 50px; /* Agrega un margen superior para separar la respuesta del botón */
+  margin-bottom: 50px; /* Agrega un margen inferior para separar el botón del resto del contenido */
+  margin-left: 60px; /* Márgen izquierdo del texto */
+  margin-right: 80px;/* Márgen derecho del texto */
+}
+
+.results-container p {
+  font-size: 2em; 
+}
+
+.results-container .finish-button {
+  margin-top: 50px; /* Alinea el botón con el mismo margen superior que la respuesta preliminar */
 }
 
 

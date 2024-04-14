@@ -48,6 +48,11 @@
 
             <!--Test del Inversor -->
             <div id="investorTestSection">
+              <!-- Instrucciones del Test del Inversor -->
+              <div div class="instructions">
+                <p>Por favor, responde las siguientes preguntas para obtener tu perfil de inversor preliminar.
+                Selecciona la opción que mejor represente tus preferencias e información financiera actual.</p>
+              </div>
               <form>
                   <!-- Pregunta 1-->
                   <div class="question">
@@ -56,7 +61,7 @@
                           <input type="radio" id="question1_option1" name="question1" value="option1">
                           <label for="question1_option1"> No tengo ningún propósito en especial.</label><br>
                           <input type="radio" id="question1_option2" name="question1" value="option2">
-                          <label for="question1_option2">Tengo un propósito en especial (Ej. compra de un bien, emprndimiento, ahorro...). </label><br>
+                          <label for="question1_option2">Tengo un propósito en especial (Ej. compra de un bien, emprendimiento, ahorro...). </label><br>
                       </div>
                   </div>
                   <!-- Pregunta 2-->
@@ -132,7 +137,10 @@
                               class="finish-button">Finalizar
                             </button>
               </form>
-            </div>    
+            </div> 
+          <!-- Rspuesta actual del Test -->  
+            <div id="respuestaTest"></div>
+  
       </main>
         <footer>
             <div class="footer-content">
@@ -179,5 +187,6 @@
             </div>
           </footer>   
     </div>
+    <script src="test_inversor.js"></script>
 </body>
 </html>
