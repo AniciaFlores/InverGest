@@ -28,6 +28,9 @@ body{
     position: relative;
     z-index: 2; /* Un número más alto que el z-index del main */
   }
+  .ingresar{
+    display: none;
+  }
   
   main {
     position: relative;
@@ -52,6 +55,7 @@ ul, ol{
 }
 
 /* Estilo para los enlaces de navegación cuando están activos */
+
 header nav ul li a.active {
   background-color: rgba(99, 102, 241, 0.4);
   ; /* Color de fondo de los enlaces activos */

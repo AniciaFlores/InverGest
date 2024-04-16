@@ -1,5 +1,5 @@
-/* Estilos para el main */
-.first-view {
+ /* Estilos para el main */
+ .first-view {
   display: flex;
   align-items: center; 
   flex-wrap: wrap;
@@ -26,6 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 .circle-image {
@@ -167,7 +169,61 @@
   margin-top: 50px; /* Alinea el botón con el mismo margen superior que la respuesta preliminar */
 }
 
-
-
-
-
+/* Estilos RESPONSIVE para Test del Inversor */
+/* Estilos móviles */
+@media screen and (max-width: 766px) {
+  .left-content, .right-content {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas grandes */
+}
+  .left-content h1{
+    font-size: 4.7em;
+  }
+  .left-content h5{
+    font-size: 1.8em;
+  }
+  .instructions {
+    text-align:center; /* Alinea el texto al centro */
+    margin-left: 10px; /* Márgen izquierdo del texto */
+    margin-right: 10px; /* Márgen derecho del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+}
+  .question::before {
+    font-size: 1.6em; 
+  }
+  .form-question{
+    font-size: 1.6em;
+    font-weight: 200;
+    margin-bottom: 20px; /* Espacio entre las preguntas y las opciones*/
+  }
+  /* Estilos para los botones de radio */
+  .response-inputs {
+    margin-left: 20px; /* Agrega un margen izquierdo para separar del borde izquierdo */
+}
+  .response-inputs input[type="radio"]{
+    display: inline-block; /* Coloca las opciones en línea horizontal */
+    margin-right: 10px; /* Ajusta el espacio entre los botones de la opción */
+    margin-bottom: 8px;
+    vertical-align:middle; /* Alinea verticalmente los botones con el texto */
+    width: 12px; /* Ancho del botón */
+    height: 12px; /* Altura del botón */
+  }
+  .response-inputs label {
+    font-size: 1.2em;
+    vertical-align:middle; /* Alinea verticalmente las etiquetas con los botones */
+    margin-top: 11px;
+    margin-bottom: 8px; /* Espacio entre las etiquetas */
+    margin-left: 8px; /* Ajusta la sangría */
+    word-wrap: break-word;
+    max-width: 215px;
+  }
+  .footer-column.empresa,
+  .footer-column.caracteristicas {
+    text-align:justify;
+    margin-left: 60px;
+}
+  .footer-column.redes{
+    text-align:justify;
+    margin-right: 50px;
+  }
+}
+  
