@@ -28,9 +28,10 @@ body{
     position: relative;
     z-index: 2; /* Un número más alto que el z-index del main */
   }
-  .ingresar{
+  .mobile-only {
     display: none;
   }
+  
   
   main {
     position: relative;
@@ -45,7 +46,7 @@ body{
 a{
     text-decoration: none;
     color: #eaeafd;
-    font-size: 1.4em;
+    font-size: 1.2em;
     display: block;
     padding: 10px 20px;
 }

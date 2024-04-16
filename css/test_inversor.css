@@ -28,12 +28,13 @@
     align-items: center;
     margin-top: 0;
     margin-right: 0;
+    padding-left: 10px; /* Agrega un relleno a la izquierda para separar del borde izquierdo */
 }
 
 .circle-image {
     width: 75%;
     border-radius: 50%;
-    margin: 100px auto 100px;
+    margin: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +90,7 @@
 /* Estilos para los botones de radio */
 .response-inputs {
   margin-left: 40px; /* Agrega un margen izquierdo para separar del borde izquierdo */
+  
 }
 .response-inputs input[type="radio"]{
   display: inline-block; /* Coloca las opciones en línea horizontal */
@@ -118,6 +120,7 @@
   vertical-align: middle; /* Alinea verticalmente las etiquetas con los botones */
   margin-bottom: 10px; /* Espacio entre las etiquetas */
   margin-left: 10px; /* Ajusta la sangría */
+  max-width: 1000px;
 }
 
 /* Estilo del botón "Finalizar" el test */
@@ -169,9 +172,12 @@
   margin-top: 50px; /* Alinea el botón con el mismo margen superior que la respuesta preliminar */
 }
 
-/* Estilos RESPONSIVE para Test del Inversor */
+/* Estilos RESPONSIVE para el Test del Inversor*/
 /* Estilos móviles */
 @media screen and (max-width: 766px) {
+  .mobile-only {
+    display: block;
+  }
   .left-content, .right-content {
     flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas grandes */
 }
@@ -226,4 +232,66 @@
     margin-right: 50px;
   }
 }
+
+/* Estilos RESPONSIVE para Test del Inversor */
+/* Estilos tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hide-InverGestApp-tablet {
+    display: none;
+  }
+  .hide-Contacto-tablet{
+    display: none;
+  }
+  .left-content, .right-content {
+    flex: 1 1 40%; /* Ocupa el 25% del ancho en pantallas grandes */
+}
+  .left-content h1{
+    font-size: 4em;
+  }
+  .left-content h5{
+    font-size: 1.8em;
+  }
+
   
+  .instructions {
+    text-align:left; /* Alinea el texto al centro */
+    margin-left: 9px; /* Márgen izquierdo del texto */
+    margin-right: 4px; /* Márgen derecho del texto */
+    font-size: 1.2em; /* Tamaño del texto */
+  }
+  .question::before {
+    font-size: 1.5em; 
+  }
+  .form-question{
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 20px; /* Espacio entre las preguntas y las opciones*/
+  }
+   /* Estilos para los botones de radio */
+   .response-inputs {
+    margin-left: 20px; /* Agrega un margen izquierdo para separar del borde izquierdo */
+}
+  .response-inputs input[type="radio"]{
+    display: inline-block; /* Coloca las opciones en línea horizontal */
+    margin-right: 6px; /* Ajusta el espacio entre los botones de la opción */
+    margin-bottom: 8px;
+    vertical-align:middle; /* Alinea verticalmente los botones con el texto */
+    width: 12px; /* Ancho del botón */
+    height: 12px; /* Altura del botón */
+  }
+  .response-inputs label {
+    font-size: 1.4em;
+    vertical-align:middle; /* Alinea verticalmente las etiquetas con los botones */
+    margin-top: 11px;
+    margin-bottom: 8px; /* Espacio entre las etiquetas */
+    margin-left: 8px; /* Ajusta la sangría */
+    max-width: 550px;
+  }
+  .footer-column.redes{
+    text-align:left;
+    margin-right: 40px;
+  }
+  .footer-column .boletin{
+    padding: 8px;
+  }
+}

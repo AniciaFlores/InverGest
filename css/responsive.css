@@ -87,18 +87,21 @@
 
   nav ul {
     display: flex;
-    justify-content: space-between; 
+    justify-content:center; 
     padding: 0; 
   }
 
-  /* Logo para Tablet */
+/* Logo para Tablet */
   nav ul li.logo {
-    flex-direction: row;
-    margin: 0 20px; /*Ajusta el margen del logo*/
-  }
+  flex: 1; /* Hace que el logo ocupe todo el espacio disponible */
+  display: flex; /* Utiliza flexbox para alinear el contenido */
+  justify-content: center; /* Alinea el contenido horizontalmente al centro */
+  margin: 0; /* Elimina el margen */
+}
 
   nav ul li {
     flex: 1; /* Hace que los elementos ocupen un espacio igual */
+    margin: 0 10px; /* Añade margen a los lados para ajustar el espaciado */
   }
 
   nav ul li:nth-child(5) {
@@ -111,6 +114,7 @@
     border-radius: 5px;
     font-size: 16px; /* Tamaño de fuente */
   }
+  
 }
 
 /* Estilos para Tablet y Desktop */
@@ -150,6 +154,7 @@
   }
 
   /* Estilos para el formulario */
+  
   .move-left {
     margin-left: 8px;
   }
@@ -177,7 +182,7 @@
   }
 }
 
-/* Estilos para Tablet */
+/* Estilos para Desktop */
 @media screen and (min-width: 767px) {
   nav ul {
     display: flex;
@@ -190,8 +195,6 @@
     top: 1px; /* Ajustado a 5px para mover el logo más cerca del borde superior */
     left: 20px;
   }
-  
-
   .ingresar {
     order: 1; /* 'Ingresar' será el segundo elemento */
   }
