@@ -22,6 +22,7 @@ body{
 
   .container {
     position: relative; /* Crea un nuevo contexto de apilamiento */
+    width: 100%; 
   }
   
   nav {
@@ -203,48 +204,48 @@ nav {
 }
 
 /* Estilos para el formulario */
-.formulario {
-  display: flex;
-  align-items: center;
+  .formulario {
+    display: flex;
+    align-items: center;
 }
-.move-left {
-  margin-left: -100px;
+  .move-left {
+    margin-left: -100px;
 }
 
 /* Estilos para el cuadro de input de email */
-.moveCuadro-left{
-  margin-left: -90px;
-  margin-top: 8px;
+  .moveCuadro-left{
+    margin-left: -90px;
+    margin-top: 8px;
 }
 
 /* Caja de e-mail*/
-.formulario move-left{
-  display: flex;
-  align-items: center;
+  .formulario move-left{
+    display: flex;
+    align-items: center;
 }
-.email-input {
-  width: 150px;
-  height: 37px;
-  padding: 10px;
-  margin-left: 2px;
-  font-size: 16px;
-  background-color: transparent; 
-  border: 1px solid #7C7C88; 
+  .email-input {
+    width: 150px;
+    height: 37px;
+    padding: 10px;
+    margin-left: 2px;
+    font-size: 16px;
+    background-color: transparent; 
+    border: 1px solid #7C7C88; 
 }
 
 /* Estilos para el botón de envío */
-.submit-button {
-  width: 56px;
-  height: 60px;
-  background-color: #FFD015;
-  border: none;
-  border-radius: 3%;
-  margin-top: 8px;
-  margin-left: 1px; /* Ajusta el espacio /entre el input y el botón */
-  cursor: pointer;
+  .submit-button {
+    width: 56px;
+    height: 60px;
+    background-color: #FFD015;
+    border: none;
+    border-radius: 3%;
+    margin-top: 8px;
+    margin-left: 1px; /* Ajusta el espacio /entre el input y el botón */
+    cursor: pointer;
 }
 /* Efecto hover en el botón de envío */
-.footer-column button:hover {
-  background-color: #6366f1;
+  .footer-column button:hover {
+    background-color: #6366f1;
 } 
 
