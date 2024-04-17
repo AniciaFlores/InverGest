@@ -251,8 +251,6 @@
   .left-content h5{
     font-size: 1.8em;
   }
-
-  
   .instructions {
     text-align:left; /* Alinea el texto al centro */
     margin-left: 9px; /* Márgen izquierdo del texto */
@@ -267,6 +265,7 @@
     font-weight: 200;
     margin-bottom: 20px; /* Espacio entre las preguntas y las opciones*/
   }
+
    /* Estilos para los botones de radio */
    .response-inputs {
     margin-left: 20px; /* Agrega un margen izquierdo para separar del borde izquierdo */
