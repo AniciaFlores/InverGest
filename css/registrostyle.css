@@ -1,0 +1,117 @@
+.title {
+    display: flex;
+    gap: 45%;
+    align-items: center;
+    margin-top: 5%;
+}
+
+h3{
+    margin-left: 8%;
+}
+
+.log-link {
+    text-decoration: none;
+    color: #6366F1;
+}
+
+.log-link:hover {
+    background-color: initial; 
+    text-decoration: underline
+}
+
+form{
+    max-width: 100%; /* Ancho máximo para el contenedor */
+    margin: 0 2% 0 8%; /* Centra el contenedor en la página */
+    padding: 20px; /* Espacio alrededor del formulario dentro del contenedor */
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 15px; /* Espacio entre las columnas y filas */
+    margin-bottom: 15px;
+}
+
+.form-group > div {
+    display: flex;
+    flex-direction: column; /* Organizar verticalmente cada celda */
+}
+
+label {
+    font-size: 1.2em;
+    color: #EAEAFD;
+    margin-bottom: 2%; /* Espacio entre el label y el campo */
+}
+
+input {
+    max-width: 90%;
+    padding: 8px;
+    border: 1px solid #7c7c88;
+    border-radius: 4px;
+    margin-right: 10%;
+    margin-bottom: 12%; /* Espacio entre el label y el campo */
+    background-color: #18181B;
+    color: #7C7C88;
+}
+
+.terms {
+    text-align: center; /* Centrar el grupo de checkbox y label */
+    margin-bottom: 5%; /* Espacio inferior entre el checkbox y otros elementos */
+    margin-left: -10%;
+}
+
+.terms input[type="checkbox"] {
+    margin: 0 1%;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
+}
+
+input[type="submit"] {
+    margin: 0 30% 12% 30%;
+    width: 30%;
+    align-items: center; 
+    justify-content: center; 
+    border: none;
+    border-radius: 10px;
+    background-color: #FFD015; 
+    color: #18181B;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #fadb5d;
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        gap: 20%
+    }
+
+    input[type="submit"] {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title{
+        display: block;
+        text-align: center;
+    }
+
+    h3{
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    .form-group{
+        display: block;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin: 10% 0 20% 0;
+    }
+}

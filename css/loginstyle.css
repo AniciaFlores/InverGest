@@ -1,0 +1,119 @@
+.first-view {
+    display: flex;
+    align-items: center; 
+    flex-wrap: nowrap;
+}
+
+.left-content {
+    flex: 2 65%;
+}
+
+.right-content {
+    flex: 1 35%;
+    background-color: #6366F1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.circle-image {
+    width: 90%;
+    border-radius: 50%;
+    margin: 130px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+form{
+    padding-bottom: 0;
+}
+
+.form-group {
+    display: block; /* Diseño vertical */
+    margin-bottom: 0;
+    margin-left: 3%; /* Opcional, puedes ajustar según prefieras */
+}
+
+input{
+    max-width: 80%;
+    margin-bottom: 5%;
+}
+
+.form-group input[type="email"] {
+    margin-bottom: 8%;
+}
+
+.log-link {
+    display: block; /* Asegura que el enlace se muestre en una nueva línea */
+    color: #6366F1;
+    text-decoration: none;
+    padding: 0 20px;
+    margin-bottom: 15%;
+}
+
+input[type="submit"] {
+    width: 50%;
+    margin: 0 0 3% 22%;
+}
+
+.register-link {
+    text-align: center; /* Centra el texto y el enlace en el formulario */
+    margin-top: 15px; /* Espacio superior para separar la línea final de los elementos anteriores */
+}
+
+.register-link p {
+    margin: 0; /* Elimina el margen adicional del párrafo */
+    display: inline; /* Asegura que el texto y el enlace se muestren en una sola línea */
+}
+
+p .log-link{
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .left-content {
+        flex: 2 55%;
+    }
+
+    .right-content {
+        flex: 1 45%;
+    }
+
+    h3{
+        font-size: 4.5em;
+        margin-bottom: 2%;
+        margin-top:5%
+    }
+
+    .circle-image {
+        margin: 100px 0;
+    }
+
+    input[type="submit"] {
+        width: 80%;
+        margin: 0 0 3% 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .right-content{
+        display: none;
+    }
+
+    h3{
+        text-align: center;
+        font-size: 3.5em;
+        margin: 10% 0 5% 0
+    }
+}
