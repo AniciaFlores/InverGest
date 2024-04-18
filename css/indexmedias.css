@@ -1,199 +1,190 @@
 @media screen and (max-width: 768px) {
-    .left-content{
-        flex: 2 60%;
-    }
-    
-    .left-content h1{
-        font-size: 5em;
+      .first-view {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
     }
 
+    h1{
+        font-size: 4.7em;
+    }
+
+    .left-content, .right-content{
+        flex: 1 1 100%; /*Ocupa el 100% en pantallas pequeñas*/
+    }
+
+    .left-content {
+        text-align: center;
+        padding: 20px;
+    }
+    
     .left-content h5{
-        font-size: 2.3em ;
+        margin: 20px auto;
+        font-weight: 300;
+    }
+
+    .buttonyellow1, .buttongrey {
+        max-width: 90%; /* Ajusta el ancho máximo al 100% */
     }
 
     .right-content{
-        flex: 1 40%;  
+        width: 390px;
     }
 
     .circle-image{
-        margin: 30% 0;
-    }   
+        margin-left: 10px;
+    }  
 
     .mission-container {
-        margin: 15vw 5vw;
-        
-    }
-
-    .mission-container h5 {
-        font-size: 2.5em ;
-    }
-
-    .image-card {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .image-cards h4{
-        font-size: 3em;
-    }
-        
-    .image-card p{
-    font-size: 1.5em;
+        width: 330px; /* Establece el ancho al 100% */
+        margin: 40px 8px;
+        padding: 5px;
     }
 
     .steps-container {
-        max-width: 100%; 
-        margin: 0em 4em 5em 4em;
-    }
-      
-    .step-number {
-    font-size: 4em;
-    margin-right: 2em;
+        max-width: 100%; /* Ajusta el ancho máximo al 100% */
+        margin-top: 5em; /* Reduce el margen superior */
+        margin-bottom: 5em; /* Reduce el margen inferior */
+        padding: 10px; /* Reduce el relleno */
     }
 
-    #number1{
-    font-size: 4em;
-    margin-right: 2.2em;
-    }
 
     .step {
-    padding-top: 20px;
-    padding-bottom: 20px;
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        margin-bottom: 40px; /* Aumenta el margen inferior */
+        padding: 20px; /* Aumenta el relleno */
+    }
+
+    .step-number {
+        margin: 0; /* Elimina el margen derecho */
+        margin-bottom: 10px; /* Ajusta el margen inferior */
+    }
+
+    .step h3 {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-bottom: 10px; /* Ajusta el margen inferior */
+    }
+
+    .step h5::after {
+        display: none; /* Oculta la línea después de los subtítulos */
     }
 
     .options-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el número de columnas */
     }
 
-    .option{
-        padding: 40px 20px;
+    .option {
+        height: auto; /* Cambia la altura a automática */
+        padding: 20px; /* Ajusta el relleno */
     }
 
     .option h3 {
-        font-size: 2.5em; 
+        font-size: 2.5em; /* Reduce el tamaño del título */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
     }
 
-    .option p, .option ul li {
-        font-size: 1.1em; 
+    .option p {
+        font-size: 1em; /* Reduce el tamaño del texto */
+        margin-bottom: 15px; /* Ajusta el margen inferior */
     }
 
-    .option a {
-        font-size: 0.9em; 
+    .option ul li {
+        font-size: 1em; /* Reduce el tamaño de la lista */
     }
 
-    .option img{
-        padding-top: 10%;
-    }
-    
-    .last-view{
-        padding-top: 80px;
+    .last-view img {
+        max-width: 40%; /* Ajusta el tamaño máximo de la imagen */
     }
 
-    .last-view img{
-        max-width: 25%;
+    .last-view h1 {
+        font-size: 3em; /* Reduce el tamaño del título */
+        margin-bottom: 10px; /* Ajusta el margen inferior */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+    .last-view h5 {
+        font-size: 1.8em; /* Reduce el tamaño del subtítulo */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
     }
 }
+
+   
   
 @media screen and (max-width: 480px) {
-    .circle-image img{
+    .circle-image img {
         width: auto;
+        height: 315px;
     }
-    
-    .circle-image{
+
+    .circle-image {
         margin: 5% auto;   
     }
 
-    .mission-container{
+    .mission-container {
         padding: 8vw;
-        margin: 25vw 5vw;
+        margin: 25vw auto;
     }
 
     .image-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-        grid-template-rows: auto auto; /* Dos filas */
-        gap: 20px;
-      }
-    
-    /* El primer elemento ocupará ambas columnas de la primera fila */
-    .image-card-item:nth-child(1) {
-    grid-column: span 2;
+        grid-template-columns: 1fr /* Una columna */
     }
 
-    /* Los otros dos elementos se mostrarán uno al lado del otro en la segunda fila */
+    .image-card-item:nth-child(1),
     .image-card-item:nth-child(2),
     .image-card-item:nth-child(3) {
-    grid-column: span 1;
+        grid-column: span 1; /* Cada elemento ocupa toda la columna */
     }
 
     .image-card-item:nth-child(1) img {
-    width: 70%;
-    height: auto; 
+        width: 100%; /* La imagen ocupa todo el espacio disponible*/
+    }
+
+    .image-cards h4,
+    .steps-container h2,
+    .step h3,
+    .step h5,
+    .detail-section h1,
+    .detail-section h5,
+    .option h3 {
+        text-align: center; /* Centra el texto horizontalmente */
     }
 
     .image-cards h4{
         font-size: 2.5em;
     }
 
+    .image-card-item p {
+        font-size: 1.4em;
+    }
+
+
     .steps-container {
         max-width: 100%; 
         margin: 0 1em 5em 1em;
     }
-      
-    .steps-container h2 {
-    font-size: 3em;
-    }
-    
+
+
     .step-number {
-    font-size: 5em;
-    margin-right: 2em;
+        font-size: 5em;
     }
 
-    #number1{
-    font-size: 5em;
-    margin-right: 2.1em;
+    #number1 {
+        font-size: 5em; 
+        margin-right: 0.1em;
     }
-    
-    .step h3 {
-    font-size: 1.5em;
-    }
-    
-    .step h5 {
-    font-size: 1.6em;
-    }
-    
+
+
     .step {
-    padding-top: 20px;
-    padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    /* Cambia la disposición de la cuadrícula a dos columnas */
-    .options-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto; /* Dos filas, una para las primeras dos opciones y otra para la última */
-        gap: 10px; 
-        margin-top: 0;
-    }
-
-    /* Aplica un tamaño de columna doble a la última opción */
-    .option:last-child {
-        grid-column: span 2; /* La última opción ocupará ambas columnas */
-    }
-
+    .options-container,
     .option {
-        padding: 15px;
-        border-radius: 20px; 
-    }
-    .detail-section h1{
-        font-size: 3.5em;
-    }
-
-    .detail-section h5{
-        font-size: 2.2em;
+        display: flex; /* Usa flexbox para centrar los elementos */
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
     }
 
-    .option h3 {
-        font-size: 2em;
-    }
 
     .option p, .option ul li {
         font-size: 1em;
@@ -207,26 +198,24 @@
         font-size: 0.9em;
     }
 
-    .option img{
+    .option img {
         height: 45%;
         padding-top: 5%;
     }
 
-    .last-view{
+    .last-view {
         padding-top: 50px;
     }
 
-    .last-view img{
-        max-width: 40%;
+    .last-view img {
+        max-width: 100%;
     }
-      
+
     .last-view h1 {
         font-size: 3.5em;
     }
-    
+
     .last-view h5 {
         font-size: 1.9em;
-
     }
 }
-
