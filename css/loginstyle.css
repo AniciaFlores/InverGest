@@ -81,6 +81,25 @@ footer{
     margin-top: 8%;
 }
 
+/* Estilos para la caja de email */
+.email-input {
+    width: 170px;
+    height: 60px;
+    padding: 10px;
+    margin-top: -7px;
+    margin-left: 2px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #7C7C88;
+}
+
+/* Estilo del botón del email */
+.submit-button{
+    margin-top: 22.5px;
+}
+
+/* Estilos para Tablet */
+
 @media screen and (max-width: 768px) {
     .left-content {
         flex: 2 55%;
@@ -91,7 +110,7 @@ footer{
     }
 
     h3{
-        font-size: 4.5em;
+        font-size: 3.5em;
         margin-bottom: 2%;
         margin-top:5%
     }
@@ -104,6 +123,10 @@ footer{
         width: 80%;
         margin: 0 0 3% 5%;
     }
+
+    .submit-button{
+        margin-top: 8px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -113,7 +136,11 @@ footer{
 
     h3{
         text-align: center;
-        font-size: 3.5em;
+        font-size: 3em;
         margin: 10% 0 5% 0
+    }
+
+    .submit-button{
+        margin-top: 13px;
     }
 }
