@@ -25,10 +25,6 @@ body{
     width: 100%; 
   }
   
-  nav {
-    position: relative;
-    z-index: 2; /* Un número más alto que el z-index del main */
-  }
   .mobile-only {
     display: none;
   }
@@ -44,7 +40,7 @@ body{
     z-index: 1; /* Un número más bajo que el z-index del nav */
 }
 
-a{
+  a{
     text-decoration: none;
     color: #eaeafd;
     font-size: 1.2em;
@@ -52,63 +48,49 @@ a{
     padding: 10px 20px;
 }
 
-ul, ol{
+  ul, ol{
     list-style-type: none;
 }
 
-/* Estilo para los enlaces de navegación cuando están activos */
 
-header nav ul li a.active {
-  background-color: rgba(99, 102, 241, 0.4);
-  ; /* Color de fondo de los enlaces activos */
-}
-
-h1{
-    font-size: 6.7em;
+  h1, h2, h3, h4, h5, h6 {
     color: #EAEAFD;
 }
 
-h2{
-    font-size: 6.4em;
-    color: #EAEAFD;
-}
+  h1 { font-size: 6.7em; }
+  h2 { font-size: 6.4em; }
+  h3 { font-size: 5.1em; }
+  h4 { font-size: 3.8em; }
+  h5 { font-size: 2.8em; color: #B7B7C7; }
+  h6 { font-size: 1.8em; }
 
-h3{
-    font-size: 5.1em;
-    color: #EAEAFD;
-}
 
-h4{
-    font-size: 3.8em;
-    color: #EAEAFD;
-}
-
-h5{
-    font-size: 2.8em;
-    color: #B7B7C7;
-}
-
-h6{
-    font-size: 1.8em;
-    color: #EAEAFD;
-}
-
-p {
-    font-size: 1.4em;
-    color: #B7B7C7;
-}
+  p {
+      font-size: 1.4em;
+      color: #B7B7C7;
+  }
 
 /* Estilos para el nav-bar */
 
-nav {
-  background-color: #18181B; /* Color de fondo, barra de navegación */
-  font-size: 1.4em; /* Tamaño-fuente predeterminado para Desktop */
-}
+  nav {
+    background-color: #18181B; /* Color de fondo, barra de navegación */
+    font-size: 1.4em; /* Tamaño-fuente predeterminado para Desktop */
+    position: relative;
+    z-index: 2;
+  }
  
   ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style-type: none;
+  }
+
+  /* Estilo para los enlaces de navegación cuando están activos */
+
+  header nav ul li a.active {
+    background-color: rgba(99, 102, 241, 0.4);
+   /* Color de fondo de los enlaces activos */
   }
 
   .menu-toggle {

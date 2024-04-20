@@ -1,14 +1,28 @@
 @media screen and (max-width: 768px) {
+
+      .hide-InverGestApp-tablet {
+        display: none;
+      }
+      .hide-Contacto-tablet{
+        display: none;
+      }
+
       .first-view {
-        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        flex-direction: row; /* Cambia la dirección del flexbox a fila */
     }
+    
+      .left-content, .right-content {
+        flex: 1 1 40%; /* Ocupa el 25% del ancho en pantallas grandes */
+    }
+      .left-content h1{
+        font-size: 4em;
+      }
+      .left-content h5{
+        font-size: 1.8em;
+      }
 
     h1{
         font-size: 4.7em;
-    }
-
-    .left-content, .right-content{
-        flex: 1 1 100%; /*Ocupa el 100% en pantallas pequeñas*/
     }
 
     .left-content {
@@ -21,6 +35,8 @@
         font-weight: 300;
     }
 
+    /* EStilos para los botones */
+
     .buttonyellow1, .buttongrey {
         max-width: 90%; /* Ajusta el ancho máximo al 100% */
     }
@@ -29,38 +45,59 @@
         width: 390px;
     }
 
-    .circle-image{
-        margin-left: 10px;
-    }  
-
+    /* Estilos de la imagen y su caja */
+    .circle-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* EStilo para la Misión */
     .mission-container {
-        width: 330px; /* Establece el ancho al 100% */
-        margin: 40px 8px;
-        padding: 5px;
+        width: 94%; /* Establece el ancho al 100% */
+        margin: 0; /* Elimina el margen lateral */
+        margin-top: 10px;
     }
 
+    h4{
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    /* Etilos de Cómo Funciona */
+
     .steps-container {
+        text-align: left;
         max-width: 100%; /* Ajusta el ancho máximo al 100% */
-        margin-top: 5em; /* Reduce el margen superior */
-        margin-bottom: 5em; /* Reduce el margen inferior */
+        margin-top: 2px; /* Reduce el margen superior */
+        margin-bottom: 5px; /* Reduce el margen inferior */
         padding: 10px; /* Reduce el relleno */
     }
 
 
+    
     .step {
         flex-direction: column; /* Cambia la dirección del flexbox a columna */
         margin-bottom: 40px; /* Aumenta el margen inferior */
         padding: 20px; /* Aumenta el relleno */
+        
     }
 
+    
     .step-number {
         margin: 0; /* Elimina el margen derecho */
         margin-bottom: 10px; /* Ajusta el margen inferior */
     }
 
+    #number1 {
+        font-size: 5em; 
+        margin-right: 0.1em;
+    }
+
     .step h3 {
         margin-left: 0; /* Elimina el margen izquierdo */
         margin-bottom: 10px; /* Ajusta el margen inferior */
+       
     }
 
     .step h5::after {
@@ -68,27 +105,36 @@
     }
 
     .options-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el número de columnas */
+        display: grid; /* Usa grid en lugar de flex */
+        grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
+        align-items: stretch; /* Asegura que todos los elementos hijos se estiren para llenar el contenedor */
     }
-
+    
     .option {
         height: auto; /* Cambia la altura a automática */
         padding: 20px; /* Ajusta el relleno */
     }
-
+    
     .option h3 {
         font-size: 2.5em; /* Reduce el tamaño del título */
         margin-bottom: 20px; /* Ajusta el margen inferior */
+    }
+    
+    /* Estilos, botones cajas: simulador...*/
+    .option a{
+        width: 90%; 
+        padding: 5px;
     }
 
     .option p {
         font-size: 1em; /* Reduce el tamaño del texto */
         margin-bottom: 15px; /* Ajusta el margen inferior */
     }
-
+    
     .option ul li {
         font-size: 1em; /* Reduce el tamaño de la lista */
     }
+    
 
     .last-view img {
         max-width: 40%; /* Ajusta el tamaño máximo de la imagen */
@@ -103,6 +149,9 @@
     .last-view h5 {
         font-size: 1.8em; /* Reduce el tamaño del subtítulo */
         margin-bottom: 20px; /* Ajusta el margen inferior */
+    }
+    .buttonyellow1{
+        width: 60%;
     }
 }
 
@@ -218,4 +267,5 @@
     .last-view h5 {
         font-size: 1.9em;
     }
+
 }

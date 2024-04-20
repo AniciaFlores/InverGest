@@ -222,6 +222,8 @@
     word-wrap: break-word;
     max-width: 215px;
   }
+
+  /* Estilos del footer */
   .footer-column.empresa,
   .footer-column.caracteristicas {
     text-align:justify;

@@ -61,7 +61,7 @@
     }
     
   .buttongrey:hover {
-  background-color: #3e3e3f;
+    background-color: #3e3e3f;
   }
 /* Estilos de la imagen principal */
   .right-content {
@@ -138,6 +138,7 @@
     color: #EAEAFD;
     font-size: 2.4em;
   }
+
   .image-cards{
     padding: 30px;
   }
@@ -330,3 +331,5 @@
       font-weight: 300;
       margin-bottom: 40px;
   }
+
+  
