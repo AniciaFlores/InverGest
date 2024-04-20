@@ -20,15 +20,15 @@ h3{
 }
 
 form{
-    max-width: 100%; /* Ancho máximo para el contenedor */
-    margin: 0 2% 0 8%; /* Centra el contenedor en la página */
-    padding: 20px; /* Espacio alrededor del formulario dentro del contenedor */
+    max-width: 100%; 
+    margin: 0 2% 0 8%; 
+    padding: 20px; 
 }
 
 .form-group {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 15px; /* Espacio entre las columnas y filas */
+    gap: 15px; 
     margin-bottom: 15px;
 }
 
@@ -40,7 +40,7 @@ form{
 label {
     font-size: 1.2em;
     color: #EAEAFD;
-    margin-bottom: 2%; /* Espacio entre el label y el campo */
+    margin-bottom: 2%; 
 }
 
 input {
@@ -49,7 +49,7 @@ input {
     border: 1px solid #7c7c88;
     border-radius: 4px;
     margin-right: 10%;
-    margin-bottom: 12%; /* Espacio entre el label y el campo */
+    margin-bottom: 12%; 
     background-color: #18181B;
     color: #7C7C88;
 }
@@ -62,7 +62,7 @@ input {
 
 .terms input[type="checkbox"] {
     margin: 0 1%;
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
+    cursor: pointer;
 }
 
 input[type="submit"] {
