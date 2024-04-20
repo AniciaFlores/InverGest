@@ -37,7 +37,7 @@ form{
 .form-group {
     display: block; /* Diseño vertical */
     margin-bottom: 0;
-    margin-left: 3%; /* Opcional, puedes ajustar según prefieras */
+    margin-left: 3%; 
 }
 
 input{
@@ -64,7 +64,7 @@ input[type="submit"] {
 
 .register-link {
     text-align: center; /* Centra el texto y el enlace en el formulario */
-    margin-top: 15px; /* Espacio superior para separar la línea final de los elementos anteriores */
+    margin-top: 15px; 
 }
 
 .register-link p {
