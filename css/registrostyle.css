@@ -44,7 +44,7 @@ label {
 }
 
 input {
-    max-width: 90%;
+    max-width: 100%;
     padding: 8px;
     border: 1px solid #7c7c88;
     border-radius: 4px;
@@ -60,9 +60,18 @@ input {
     margin-left: -10%;
 }
 
+/* Estilos para el Checkbox */
 .terms input[type="checkbox"] {
     margin: 0 1%;
+    padding: 0; /* Quitar el relleno */
+    transform: scale(1.5);
     cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
+}
+
+/* Estilo botón de envío */
+.submit-button{
+    margin-bottom: 50px;
+    margin-left: -48px;
 }
 
 input[type="submit"] {
@@ -93,6 +102,12 @@ input[type="submit"]:hover {
     input[type="submit"] {
         width: 40%;
     }
+
+    /* Estilo botón de envío */
+    .submit-button{
+    margin-bottom: 30px;
+    margin-left: -28px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -104,12 +119,25 @@ input[type="submit"]:hover {
     h3{
         margin: 0;
         margin-top: 10%;
+        font-size: 3em;
     }
 
     .form-group{
         display: block;
     }
 
+    /* Estilos para el Checkbox y el texto */
+    .terms input[type="checkbox"] {
+        margin: 10px;
+        margin-top: 2px;
+        transform: scale(1);   
+    }
+
+    .terms label {
+        font-size: 1.3em;
+    }
+
+    /* Estilos para el botón de envío */
     input[type="submit"] {
         width: 100%;
         margin: 10% 0 20% 0;
