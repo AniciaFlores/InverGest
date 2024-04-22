@@ -194,7 +194,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #6366f1; /* Cambia el color a rojo al pasar el cursor */
+  color: #6366f1; 
 }
 
 /* Estilos para el formulario */

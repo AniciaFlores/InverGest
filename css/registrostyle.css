@@ -92,6 +92,42 @@ input[type="submit"]:hover {
     background-color: #fadb5d;
 }
 
+
+@media screen and (max-width: 766px) {
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    nav {
+      font-size: 1em;
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .bi-list {
+      color: white;
+      display: block;
+    }
+    /* Oculta los elementos que no quieres mostrar */
+    nav ul li:not(.logo):not(.ingresar) {
+      display: none;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-toggle, .logo, .ingresar {
+      flex-basis: 33.33%;
+    }
+    .menu-toggle {
+      text-align: left;
+    }
+    .ingresar {
+      text-align: right;
+    }
+  }
+  
+
 @media screen and (max-width: 768px) {
     .title{
         gap: 20%
