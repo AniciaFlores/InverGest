@@ -185,6 +185,18 @@ body{
     margin-top: 0;
 }
 
+footer a.footer-link:hover {
+  background-color: transparent; /* or whatever hover effect you want for footer links */
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #6366f1; /* Cambia el color a rojo al pasar el cursor */
+}
+
 /* Estilos para el formulario */
   .formulario {
     display: flex;
