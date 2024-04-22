@@ -66,13 +66,25 @@
             <!-- Más preguntas y respuestas? -->
         </div>
 
-        <!-- Borón de Volver arriba -->
+        <!-- Botón de Volver arriba -->
         <a href="#top" class="back-to-top">Volver arriba</a>
 
         <!-- Lleva al usuario a la sección de contacto -->
-        <div class="contact-support contact-faq">
-            ¿Tienes más preguntas? <a href="#">Contáctanos</a>
+        <div class="contact-support">
+            ¿Tienes más preguntas? <a class="contact-faq" href="#">Contáctanos</a>
         </div>
+
+        <!-- Sección de Feedback del usuario -->
+        <div class="user-feedback">
+            <h5>¿Te resultó útil esta página?</h5>
+            <p>Por favor, danos tu opinión:</p>
+            <form id="feedback-form">
+                <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Escribe aquí tu opinión"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="thankyou-message" style="display: none; color: white;">¡Gracias por tu opinión!</p>
+        </div>
+        
         
 
     </main>
@@ -121,5 +133,6 @@
             &copy; 2024 InverGestApp - Todos los derechos reservados
           </div>
     </footer>
+    <script src="/faq.js"></script>
 </body>
 </html>
