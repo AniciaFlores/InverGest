@@ -1,0 +1,140 @@
+/* Estilos base para todos los tamaños de pantalla */
+.first-view {
+    align-items: stretch;
+}
+
+.left-content {
+    flex: 2 65%;
+    padding: 0 5%;
+    padding-top: 5%;
+}
+
+.left-content h5 {
+    font-size: 1.8em;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.right-content {
+    flex: 1 35%;
+    padding: 1% 1.5%;
+}
+
+.info {
+    margin: 5%;
+    padding-top: 10%;
+}
+
+.info h2,
+.info h3,
+.info ul {
+    padding: 2% 10%;
+}
+
+.info h2 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.info h3 {
+    font-weight: 300;
+    font-size: 3em;
+    padding-top: 0;
+}
+
+.company {
+    padding-top: 10%;
+}
+
+#detail {
+    padding-top: 0;
+}
+
+.info ul {
+    color: #EAEAFD;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: left;
+    list-style-type: circle;
+}
+
+.reviews {
+    margin: 10%;
+    max-width: 90%;
+    padding: 5%;
+    border-radius: 40px;
+    border: 1px solid #FFD015;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+.reviews h3 {
+    margin-bottom: 10px;
+    font-size: 3.5em;
+    padding: 0;
+}
+
+.reviews p {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #EAEAFD;
+    margin-bottom: 10px;
+}
+
+.reviews svg {
+    margin-bottom: 10px;
+    color: #B7B7C7;
+}
+
+.reviews ul {
+    list-style-type: none;
+    padding: 2% 0;
+    text-align: left;
+    color: #B7B7C7;
+}
+
+.reviews ul li {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23dcc707' d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4l8-8z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 0 50%;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #EAEAFD;
+}
+
+.container-btns{
+    width: 70%;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .first-view{
+        flex-wrap: wrap;
+    }
+    .circle-image{
+        width: auto;
+    }
+    .left-content{
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+    }
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    html{
+        width: 100vh;
+    }
+    .info h2,
+    .info h3,
+    .info ul {
+    padding: 2% 7%;
+    }
+}
