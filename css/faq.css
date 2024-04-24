@@ -1,15 +1,20 @@
 /* Estilos para la lista de preguntas frecuentes */
 .faq-list {
-    margin-left: 20px; /* Agrega un espacio de 20px al margen izquierdo */
+    margin-left: 30px; /* Agrega un espacio de 20px al margen izquierdo */
 }
 
 /* Estilos para cada pregunta */
 .faq-list h5 {
     margin-top: 40px; /* Agrega un espacio de 20px sobre cada pregunta */
+    font-weight: 300;
+    color: #a1a1ef;
 }
 
 .faq-list p {
     font-size: 2em;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
 }
 
 /* Estilos para el Botón de Volver arriba */
@@ -33,7 +38,7 @@
 .contact-support{
     font-size: 2em;
     margin-top: 80px;
-    margin-left: 20px;
+    margin-left: 70px;
     transition: color 0.3s ease;
 }
 
@@ -62,6 +67,7 @@
   /* Estilos para la sección de Feedback del usuario */
 .user-feedback {
     margin-top: 50px;
+    margin-left: 50px;
 }
 
 .user-feedback h5 {
@@ -72,7 +78,7 @@
 
 .user-feedback p{
     font-size: 1.5em;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .user-feedback textarea {
@@ -103,5 +109,47 @@
 @media screen and (max-width: 766px) {
     .mobile-only {
       display: block;
+    }
+    h3 {
+        font-size: 3.1em;
+        text-align: center;
+    }
+    .faq-list h5 {
+        font-size: 1.8em;
+    }
+    .faq-list p {
+        font-size: 1.6em;
+        text-align:center;
+        margin-left: 0;
+    }
+    .contact-support {
+        font-size: 1.6em;
+        text-align: center;
+        margin-left: 10px
+    }
+    .user-feedback h5 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .user-feedback {
+        margin-top: 30px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .user-feedback textarea {
+        margin-left: 20px;
+        width: 83%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: center;
+    }
+    .user-feedback button {
+        align-items: center;
+        margin-left: 110px;
+    }
+    .back-to-top {
+        margin-right: 5px;
     }
 }
