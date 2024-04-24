@@ -106,7 +106,7 @@
 }
 
 /* Estilos para móbiles */ 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 480px) {
     .mobile-only {
       display: block;
     }
@@ -147,9 +147,37 @@
     }
     .user-feedback button {
         align-items: center;
-        margin-left: 110px;
     }
     .back-to-top {
         margin-right: 5px;
     }
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hide-InverGestApp-tablet {
+      display: none;
+    }
+    .hide-Contacto-tablet{
+      display: none;
+    }
+    h3 {
+        font-size: 4.1em;
+        margin-left: 35px;
+    }
+    h5 {
+        font-size: 2em;
+        margin-left: 35px;
+    }
+    .faq-list p {
+        font-size: 1.8em;
+        margin-right: 60px;
+    }
+    .back-to-top {
+        margin-right: 5px;
+    }
+    .user-feedback textarea {
+        
+        width: 86%;
+    
 }
