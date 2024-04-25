@@ -66,11 +66,6 @@ input {
     cursor: pointer; /* Cambiar el cursor al pasar sobre el checkbox */
 }
 
-/* Estilo botón de envío */
-.submit-button{
-    margin-bottom: 50px;
-    margin-left: -48px;
-}
 
 input[type="submit"] {
     margin: 0 30% 12% 30%;
@@ -90,6 +85,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #fadb5d;
+}
+
+/* Estilo botón envío email boletin */
+.submit-button {
+    margin-top: -42px;
+    margin-left: -42px;
 }
 
 
@@ -135,14 +136,9 @@ input[type="submit"]:hover {
 
     input[type="submit"] {
         width: 40%;
-    }
+    }  
+}
 
-    /* Estilo botón de envío */
-    .submit-button{
-    margin-bottom: 30px;
-    margin-left: -28px;
-}
-}
 
 @media screen and (max-width: 480px) {
     .title{

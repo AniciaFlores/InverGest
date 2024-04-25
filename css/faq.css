@@ -176,8 +176,7 @@
     .back-to-top {
         margin-right: 5px;
     }
-    .user-feedback textarea {
-        
-        width: 86%;
-    
+    .user-feedback textarea {       
+        width: 86%;   
+    }
 }
