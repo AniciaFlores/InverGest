@@ -163,6 +163,10 @@
         border-radius: 3%;
     }
 
+    .left-content .buttonyellow1{
+        max-width: 70%;
+    }
+
     .info h2,
     .info h3,
     .info ul {
