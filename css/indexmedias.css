@@ -37,8 +37,9 @@
 
     /* EStilos para los botones */
 
-    .buttonyellow1, .buttongrey {
+    .left-content .buttonyellow1, .buttongrey {
         max-width: 90%; /* Ajusta el ancho máximo al 100% */
+        padding: 0;
     }
 
     .right-content{
@@ -50,13 +51,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+          margin: 80px auto;
+    }
+
+    .circle-image img{
+        max-width: 120%;
     }
     
     /* EStilo para la Misión */
     .mission-container {
         width: 94%; /* Establece el ancho al 100% */
         margin: 0; /* Elimina el margen lateral */
-        margin-top: 10px;
+        margin-top: 80px;
     }
 
     h4{
@@ -70,28 +76,27 @@
         text-align: left;
         max-width: 100%; /* Ajusta el ancho máximo al 100% */
         margin-top: 2px; /* Reduce el margen superior */
-        margin-bottom: 5px; /* Reduce el margen inferior */
+        margin-bottom: 100px; /* Reduce el margen inferior */
         padding: 10px; /* Reduce el relleno */
     }
-
-
     
     .step {
         flex-direction: column; /* Cambia la dirección del flexbox a columna */
         margin-bottom: 40px; /* Aumenta el margen inferior */
         padding: 20px; /* Aumenta el relleno */
-        
+          align-items: flex-start;
     }
-
     
     .step-number {
         margin: 0; /* Elimina el margen derecho */
         margin-bottom: 10px; /* Ajusta el margen inferior */
+          align-self: center;
     }
 
     #number1 {
         font-size: 5em; 
         margin-right: 0.1em;
+          align-self: center;
     }
 
     .step h3 {
@@ -104,26 +109,42 @@
         display: none; /* Oculta la línea después de los subtítulos */
     }
 
+      .detail-section h5{
+        font-size: 2.2em;
+        margin: 0;
+    }
+
+    .detail-section h4{
+        font-size: 3.5em;
+        margin: 30px 0;
+    }
+
     .options-container {
         display: grid; /* Usa grid en lugar de flex */
         grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
         align-items: stretch; /* Asegura que todos los elementos hijos se estiren para llenar el contenedor */
+          padding: 0;
     }
     
     .option {
         height: auto; /* Cambia la altura a automática */
-        padding: 20px; /* Ajusta el relleno */
+        padding: 30px 20px; /* Ajusta el relleno */
     }
     
-    .option h3 {
+   .option h3 {
         font-size: 2.5em; /* Reduce el tamaño del título */
-        margin-bottom: 20px; /* Ajusta el margen inferior */
+        margin-top: 10px;
+    }
+
+    .option img{
+        padding-top: 30px;
+        height: 40%;
     }
     
     /* Estilos, botones cajas: simulador...*/
     .option a{
-        width: 90%; 
-        padding: 5px;
+        align-self: center;
+          font-weight: 500;
     }
 
     .option p {
@@ -150,14 +171,28 @@
         font-size: 1.8em; /* Reduce el tamaño del subtítulo */
         margin-bottom: 20px; /* Ajusta el margen inferior */
     }
+      
     .buttonyellow1{
         width: 100%;
+        padding: 0;
     }
+
+    .move-left {
+        margin-left: -80px; /* Cambia el valor del margen izquierdo */
+      }
+    
+      .footer-column{
+        margin-left: 0;
+      }
 }
 
    
   
 @media screen and (max-width: 480px) {
+      .left-content{
+        margin-bottom: 40px;
+      }
+      
     .circle-image img {
         width: auto;
         height: 315px;
@@ -168,10 +203,17 @@
     }
 
     .mission-container {
-        padding: 8vw;
-        margin: 25vw auto;
+        padding: 3vw;
+        margin: 20vw auto;
+        margin-bottom: 10vw;
+        width: 90%;
     }
 
+    .mission-container h5{
+        font-size: 2.5em;
+        margin: 0 15px 20px 15px;
+    }
+      
     .image-card {
         grid-template-columns: 1fr /* Una columna */
     }
@@ -186,31 +228,24 @@
         width: 100%; /* La imagen ocupa todo el espacio disponible*/
     }
 
-    .image-cards h4,
-    .steps-container h2,
-    .step h3,
-    .step h5,
-    .detail-section h1,
-    .detail-section h5,
-    .option h3 {
-        text-align: center; /* Centra el texto horizontalmente */
-    }
-
-    .image-cards h4{
+     .image-cards h4{
         font-size: 2.5em;
     }
 
     .image-card-item p {
-        font-size: 1.4em;
+        font-size: 2em;
     }
 
 
     .steps-container {
         max-width: 100%; 
-        margin: 0 1em 5em 1em;
         text-align: center;
     }
 
+    .step h5{
+        margin-left: 0;
+        margin-top:  15px;
+    }
 
     .step-number {
         font-size: 5em;
@@ -221,7 +256,6 @@
         margin-right: 0.1em;
     }
 
-
     .step {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -231,42 +265,47 @@
     .option {
         display: flex; /* Usa flexbox para centrar los elementos */
         flex-direction: column; /* Los elementos se apilan verticalmente */
-        align-items: center; /* Centra los elementos horizontalmente */
-        justify-content: center; /* Centra los elementos verticalmente */
+       justify-content: center; /* Centra los elementos verticalmente */
+        width: 85%;
     }
 
-
-    .option p, .option ul li {
-        font-size: 1em;
+    .option{
+        padding: 30px;
     }
 
+    .option p, .option ul li, .option a {
+        font-size: 1.3em;
+    }
+
+    .option h3{
+        font-size: 2.8em;
+        margin-bottom: 0;
+    }
+      
     .option ul {
         padding: 5% 0;
     }
 
-    .option a {
-        font-size: 0.9em;
-    }
-
-    .option img {
-        height: 45%;
+      .option img {
         padding-top: 5%;
+        margin: 0;
+        margin-bottom: 10%;
+        width: 90%;
+        align-self: center;
     }
 
     .detail-section{
         align-items: center;
-        margin-right: -30px;
         text-align: center;
     }
 
-    .last-view {
-        padding-top: 50px;
+      .last-view {
+        padding: 50px 0;
         margin: 14px;
-        margin-right: -10px;
     }
 
     .last-view img {
-        max-width: 100%;
+        max-width: 60%;
     }
 
     .last-view h1 {
@@ -275,6 +314,14 @@
 
     .last-view h5 {
         font-size: 1.9em;
+    }
+
+      .move-left {
+        margin-left: 0; /* Cambia el valor del margen izquierdo */
+    }
+
+    .footer-column{
+        margin-left: 10px;
     }
 
 }
