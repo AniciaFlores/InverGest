@@ -295,4 +295,12 @@
   .footer-column .boletin{
     padding: 8px;
   }
+ 
+  .move-left {
+    margin-left: -80px; /* Cambia el valor del margen izquierdo */
+  }
+    
+  .footer-column{
+    margin-left: 0;
+  }
 }
