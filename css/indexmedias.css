@@ -299,8 +299,8 @@
         text-align: center;
     }
 
-    .last-view {
-        padding-top: 50px;
+      .last-view {
+        padding: 50px 0;
         margin: 14px;
     }
 
@@ -314,6 +314,14 @@
 
     .last-view h5 {
         font-size: 1.9em;
+    }
+
+      .move-left {
+        margin-left: 0; /* Cambia el valor del margen izquierdo */
+    }
+
+    .footer-column{
+        margin-left: 10px;
     }
 
 }
