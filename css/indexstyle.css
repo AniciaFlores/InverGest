@@ -5,7 +5,7 @@
     align-items: center; 
     flex-wrap: wrap;
   }
-  
+
   .left-content, .right-content {
     flex: 1 1 25%; /* Ocupa el 50% del ancho en pantallas grandes */
   }
