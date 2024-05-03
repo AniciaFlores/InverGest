@@ -4,8 +4,8 @@
 }
 
 .left-content {
-    flex: 2 65%;
-    padding: 0 5%;
+    flex: 2 40%;
+    padding: 5%;
     padding-top: 5%;
 }
 
@@ -13,6 +13,15 @@
     font-size: 1.8em;
     padding: 5px;
     padding-bottom: 10px;
+}
+
+.circle-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.circle-image {
+    margin: 20px auto;
 }
 
 .right-content {
@@ -55,7 +64,11 @@
     font-weight: 300;
     font-size: 2em;
     text-align: left;
-    list-style-type: circle;
+    list-style-type: disc;
+}
+
+.info ul li{
+    display:list-item;
 }
 
 .reviews {
@@ -113,17 +126,12 @@
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
-    .first-view{
-        flex-wrap: wrap;
+  .left-content {
+        flex: 2 50%;
     }
+    
     .circle-image{
-        width: auto;
-    }
-    .left-content{
-        display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+        width: 90%;
     }
 }
 
@@ -132,6 +140,33 @@
     html{
         width: 100vh;
     }
+
+     .first-view{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Cambiamos la dirección a column para apilar los elementos */
+    }
+
+    .left-content {
+        flex: 1;
+        margin: 40px;
+    }
+
+    .right-content {
+        width: 500px; /* Tamaño deseado para el cuadrado */
+        height: 500px; /* Tamaño deseado para el cuadrado */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Espacio entre el contenido izquierdo y derecho */
+        border-radius: 3%;
+    }
+
+    .left-content .buttonyellow1{
+        max-width: 70%;
+    }
+
     .info h2,
     .info h3,
     .info ul {

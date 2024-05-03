@@ -42,6 +42,10 @@
 
 /* Estilos para el footer en móviles */
 @media screen and (max-width: 600px) {
+  footer{
+    padding-left: 0;
+  }
+  
   .footer-content {
     flex-direction: column;
   }
@@ -113,6 +117,10 @@
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 16px; /* Tamaño de fuente */
+  }
+
+  footer{
+    padding-left: 2%;
   }
   
 }
