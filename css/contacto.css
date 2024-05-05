@@ -19,18 +19,30 @@
     margin: 0 10%;
 }
 
-.enlace-btn{
-  border: none;
-  border-radius: 10px;
-    padding: 0;
-
-}
+/* Estilos para el botón Suscribirme */
 .button-subs {
     border-radius: 8px;
-    width: 100% ;
+    width: 100%;
     margin: 0;
-    height: 30px;
+    height: 57px; 
+    background-color: #FFD015;
+    color: #18181B;
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none;
+    transition: background-color 0.3s; 
 }
+
+/* Estilos para el botón Suscribirme al pasar el cursor */
+.button-subs:hover {
+    background-color: #fadb5d;
+}
+
+/* Estilos para el botón Suscribirme al hacer clic */
+.button-subs:active {
+    background-color: #d4a605; 
+}
+
 .input-subs{
     width: 100%;
 }
@@ -39,6 +51,12 @@
     justify-content: center;
     gap: 30px;
 }
+
+.nivel-de-experiencia {
+    color: white;
+    font-size: 1.2em;
+}
+
 .container-contacto{
     margin-top: 50px;
 }
@@ -66,6 +84,21 @@
     border-color: #7C7C88;
     padding: 16px 48px 20px 5px;
 }
+
+.boton-enviar {
+    background-color: #4CAF50; 
+    color: #18181B; 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: #7C7C88;
+    cursor: pointer; 
+}
+
+
 
 /*Reponsive Mobile*/
 @media (max-width:768px){

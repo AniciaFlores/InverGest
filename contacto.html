@@ -42,9 +42,15 @@
                     Al suscribirte, aceptas recibir correos electrónicos con noticias, actualizaciones y promociones de nuestra plataforma. Puedes darte de baja en cualquier momento.
                 </p>
             </div>
-            <div class="container-subs container-flex">
-                <input class="input-subs input" type="email" placeholder="ejemplo@gmail.com">
-                <a href="registro.html" class="buttonyellow1 button-subs">Suscribirme</a>
+              <div class="container-subs container-flex">
+                <label for="nivel-experiencia" class="nivel-de-experiencia">Nivel de experiencia:</label>
+                <select class="input" id="nivel-experiencia" name="nivel-experiencia">
+                    <option value="primera-vez">Primera vez que invierto</option>
+                    <option value="he-invertido">Ya he invertido</option>
+                    <option value="invierto-siempre">Invierto siempre</option>
+                </select>
+                <input class="input-subs input" type="email" id="email-suscripcion" placeholder="ejemplo@gmail.com">
+                <button type="button" id="boton-suscribirme" class="buttonyellow1 button-subs">Suscribirme</button>
             </div>
         </div>
         <div class="container-section">
@@ -54,17 +60,18 @@
                                 <img src="imgs/joven_feliz.jpg" alt="Joven sonriente">
                             </div>
                         </div>
-            <form action="/enviar_formulario.php" method="post">
+                        
+              <form id="form-suscripcion" action="/ruta/de/destino" method="POST">
                 <div class="container-flex container-contacto-mensaje columna">
                     <div class="container-flex">
                         <input class="input" type="email" id="mail" name="mail"  placeholder="ejemplo@gmail.com" required>
-            
                         <input class="input" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                     </div>
                     <div class="container-contacto-input">
                         <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                     </div>
                 </div>
+                <input type="submit" value="Enviar" class="boton-enviar">
               </form>  
             </div>
         </div>
@@ -113,5 +120,6 @@
         &copy; 2024 InverGestApp - Todos los derechos reservados
       </div>
     </footer>
+    <script src="ruta/a/tu/archivo/validacion.js"></script>
 </body>
 </html>
