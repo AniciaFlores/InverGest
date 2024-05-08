@@ -39,7 +39,7 @@ body{
     position: relative; /* O cualquier otra posición que no sea 'static' */
     z-index: 1; /* Un número más bajo que el z-index del nav */
 }
-
+/* Logo */
   a{
     text-decoration: none;
     color: #eaeafd;

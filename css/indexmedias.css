@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
+      .bi {
+        font-size: 36px; /*Menú hamburguesa*/
+      }
 
+      
       .hide-InverGestApp-tablet {
         display: none;
       }
@@ -9,11 +13,11 @@
 
       .first-view {
         flex-direction: row; /* Cambia la dirección del flexbox a fila */
-    }
+      }
     
       .left-content, .right-content {
         flex: 1 1 40%; /* Ocupa el 25% del ancho en pantallas grandes */
-    }
+      }
       .left-content h1{
         font-size: 4em;
       }
