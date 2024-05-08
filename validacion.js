@@ -43,7 +43,7 @@ document.getElementById('boton-suscribirme').addEventListener('click', function(
 });
 
 // Función para detener el envío del formulario al hacer clic en el botón "Enviar" en el segundo formulario
-document.getElementById('boton-enviar').addEventListener('click', function(event) {
+document.querySelector('.boton-enviar').addEventListener('click', function(event) {
     // Detiene el comportamiento predeterminado del botón
     event.preventDefault();
 
