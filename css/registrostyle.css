@@ -130,6 +130,10 @@ input[type="submit"]:hover {
   
 
 @media screen and (max-width: 768px) {
+    .bi {
+        font-size: 36px; /*Menú hamburguesa*/
+      }
+
     .title{
         gap: 20%
     }

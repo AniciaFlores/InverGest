@@ -175,6 +175,10 @@
 /* Estilos RESPONSIVE para el Test del Inversor*/
 /* Estilos móviles */
 @media screen and (max-width: 766px) {
+  .bi {
+    font-size: 36px; /*Menú hamburguesa*/
+  }
+  
   .mobile-only {
     display: block;
   }

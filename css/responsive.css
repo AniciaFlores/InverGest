@@ -34,11 +34,20 @@
     margin-right: 5px;
   }
 
+
   .ingresar{
     margin-top: 2px;
     margin-left: 0;
     
   }
+  .footer-column, h6{
+    text-align: center;
+  }
+
+  li a{
+    margin-top: 0;
+  }
+
 
   /* Oculta los elementos que no quieres mostrar */
   nav ul li:not(.logo):not(.ingresar) {
@@ -71,7 +80,7 @@
 
   .footer-column {
     flex-basis: 100%;
-    text-align: center;
+    text-align:left;
     margin-bottom: 20px;
   }
 

@@ -110,6 +110,11 @@
     .mobile-only {
       display: block;
     }
+    
+    .bi {
+        font-size: 36px; /*Menú hamburguesa*/
+    }
+
     h3 {
         font-size: 3.1em;
         text-align: center;
@@ -161,6 +166,8 @@
     .hide-Contacto-tablet{
       display: none;
     }
+
+
     h3 {
         font-size: 4.1em;
         margin-left: 35px;

@@ -104,10 +104,10 @@ body{
 /* Logo */
 @keyframes colorchange {
   0%   {color: rgb(99, 102, 241);}
-  25%  {color: rgb(249, 249, 245);}
-  50%  {color: rgb(132, 132, 242);}
-  75%  {color: rgb(12, 246, 12);}
-  100% {color: rgb(8, 217, 240);}
+  25%  {color: rgb(8, 217, 240);}
+  50%  {color: rgb(99, 120, 250);}
+  75%  {color: rgb(111, 113, 231);}
+  100% {color: rgb(249, 249, 247 );}
 }
 
 @keyframes sizechange {
