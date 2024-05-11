@@ -40,7 +40,7 @@ form{
     margin-left: 3%; 
 }
 
-input{
+.loginform input{
     max-width: 80%;
     margin-bottom: 5%;
 }
@@ -82,7 +82,7 @@ footer{
 }
 
 /* Estilos para la caja de email */
-.email-input {
+.loginform.email-input {
     width: 170px;
     height: 40px;
     padding: 10px;
@@ -94,7 +94,7 @@ footer{
 }
 
 /* Estilo del botón del email */
-.submit-button{
+.loginform.submit-button{
     margin-top: 22.5px;
     height: 62px;
 }   
