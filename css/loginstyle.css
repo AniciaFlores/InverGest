@@ -40,7 +40,7 @@ form{
     margin-left: 3%; 
 }
 
-.loginform input{
+.dataform input{
     max-width: 80%;
     margin-bottom: 5%;
 }
@@ -54,7 +54,7 @@ form{
     color: #6366F1;
     text-decoration: none;
     padding: 0 20px;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 input[type="submit"] {
@@ -82,7 +82,7 @@ footer{
 }
 
 /* Estilos para la caja de email */
-.loginform.email-input {
+.dataform.email-input {
     width: 170px;
     height: 40px;
     padding: 10px;
@@ -94,7 +94,7 @@ footer{
 }
 
 /* Estilo del botón del email */
-.loginform.submit-button{
+.dataform.submit-button{
     margin-top: 22.5px;
     height: 62px;
 }   
@@ -125,7 +125,7 @@ footer{
         margin: 0 0 3% 5%;
     }
 
-   .loginform .submit-button{
+   .dataform .submit-button{
         margin-top: 8px;
     }
 }
@@ -141,7 +141,11 @@ footer{
         margin: 10% 0 5% 0
     }
 
-    .loginform.submit-button{
+    .dataform.submit-button{
         margin-top: 13px;
+    }
+
+    a {
+        margin-top: 0;
     }
 }
