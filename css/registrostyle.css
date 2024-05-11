@@ -43,7 +43,7 @@ label {
     margin-bottom: 2%; 
 }
 
-input {
+.registroform input {
     max-width: 100%;
     padding: 8px;
     border: 1px solid #7c7c88;
@@ -88,7 +88,7 @@ input[type="submit"]:hover {
 }
 
 /* Estilo botón envío email boletin */
-.submit-button {
+.registroform.submit-button {
     margin-top: -42px;
     margin-left: -42px;
 }
