@@ -40,7 +40,8 @@
     margin-left: 0;
     
   }
-  .footer-column, h6{
+  
+  h6{
     text-align: center;
   }
 
@@ -48,6 +49,10 @@
     margin-top: 0;
   }
 
+  .footer-column h6, .footer-column ul{
+    text-align: left;
+    align-items: normal;
+  }
 
   /* Oculta los elementos que no quieres mostrar */
   nav ul li:not(.logo):not(.ingresar) {
