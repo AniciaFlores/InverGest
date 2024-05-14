@@ -115,6 +115,13 @@
         font-size: 36px; /*Menú hamburguesa*/
     }
 
+       /* Menú hamburguesa */
+       .menu-toggle, .bi-list {
+        display: block;
+        margin-left: 8px;
+        margin-top: -5px;
+      }
+
     h3 {
         font-size: 3.1em;
         text-align: center;
