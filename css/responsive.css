@@ -17,13 +17,6 @@
     align-items: center;
   }
   
-
-  .menu-toggle, .bi-list {
-    display: block;
-    margin-left: 8px;
-    margin-top: -5px;
-  }
-
   .bi-list {
     color: white;
     display: block;
@@ -227,12 +220,17 @@
 
   .logo {
     order: 0; /* El logo será el primer elemento */
-    /* position: absolute; */ /* Comentado */
+    /* position: absolute; */ 
     top: 1px; /* Ajustado a 5px para mover el logo más cerca del borde superior */
     left: 20px;
   }
   .ingresar {
     order: 1; /* 'Ingresar' será el segundo elemento */
   }
+
+  .menu {
+    display: none;
+  }
 }
+
 
