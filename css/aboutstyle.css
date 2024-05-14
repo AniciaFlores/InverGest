@@ -137,10 +137,6 @@
 
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 480px) {
-    html{
-        width: 100vh;
-    }
-
      .first-view{
         display: flex;
         justify-content: center;
@@ -150,11 +146,11 @@
 
     .left-content {
         flex: 1;
-        margin: 40px;
+
     }
 
     .right-content {
-        width: 500px; /* Tamaño deseado para el cuadrado */
+        width: 300px; /* Tamaño deseado para el cuadrado */
         height: 500px; /* Tamaño deseado para el cuadrado */
         display: flex;
         justify-content: center;
@@ -173,3 +169,4 @@
     padding: 2% 7%;
     }
 }
+
