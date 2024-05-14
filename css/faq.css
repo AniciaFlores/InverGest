@@ -58,13 +58,13 @@
 
 .contact-faq {
     transition: color 0.3s ease;
-  }
+}
   
 .contact-faq:hover {
     color: #6366f1; 
-  } 
+} 
 
-  /* Estilos para la sección de Feedback del usuario */
+/* Estilos para la sección de Feedback del usuario */
 .user-feedback {
     margin-top: 50px;
     margin-left: 50px;
@@ -103,6 +103,35 @@
 
 .user-feedback button:hover {
     background-color: #242459;
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hide-InverGestApp-tablet {
+      display: none;
+    }
+    .hide-Contacto-tablet{
+      display: none;
+    }
+
+    h3 {
+        font-size: 4.1em;
+        margin-left: 35px;
+    }
+    h5 {
+        font-size: 2em;
+        margin-left: 35px;
+    }
+    .faq-list p {
+        font-size: 1.8em;
+        margin-right: 60px;
+    }
+    .back-to-top {
+        margin-right: 5px;
+    }
+    .user-feedback textarea {       
+        width: 86%;   
+    }
 }
 
 /* Estilos para móbiles */ 
@@ -162,35 +191,5 @@
     }
     .back-to-top {
         margin-right: 5px;
-    }
-}
-
-/* Estilos para tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .hide-InverGestApp-tablet {
-      display: none;
-    }
-    .hide-Contacto-tablet{
-      display: none;
-    }
-
-
-    h3 {
-        font-size: 4.1em;
-        margin-left: 35px;
-    }
-    h5 {
-        font-size: 2em;
-        margin-left: 35px;
-    }
-    .faq-list p {
-        font-size: 1.8em;
-        margin-right: 60px;
-    }
-    .back-to-top {
-        margin-right: 5px;
-    }
-    .user-feedback textarea {       
-        width: 86%;   
     }
 }
